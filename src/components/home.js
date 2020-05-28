@@ -10,19 +10,29 @@ import './style.scss';
 
 const home = ({ className }) => {
   return (
-  <Hero>
-    <section className={className} id="accueil">
-      <h1 className="is-invisible">Portfolio Baptiste Lagisquet</h1>
-      <a href="#aboutme"><span className="icon">
-        <i className="fas fa-2x fa-arrow-circle-down is-hidden-tablet"></i>
-        <i className="fas fa-3x fa-arrow-circle-down is-hidden-mobile"></i>
+    <Hero>
+      <section className={className} id="accueil">
+        <h1 className="is-invisible">Portfolio Baptiste Lagisquet</h1>
+        <div className="is-vcentered">
+          <h2 className="has-text-centered has-text-weight-bold title is-size-1">Baptiste Lagisquet</h2>
+          <h3 className="has-text-centered subtitle is-size-2">Développeur web et mobile</h3>
+        </div>
+        <a href="#aboutme"><span className="icon">
+          <i className="fas fa-2x fa-arrow-circle-down is-hidden-tablet"></i>
+          <i className="fas fa-3x fa-arrow-circle-down is-hidden-mobile"></i>
         </span></a>
-    </section>
-  </Hero>
+      </section>
+    </Hero>
   );
 }
 
 export default styled(home)`
+  h2 {
+    color: ${colors.white};
+  }
+  h3 {
+    color: ${colors.primary};
+  }
   span {
     position: absolute;
     top: 92vh;
