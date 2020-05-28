@@ -11,16 +11,16 @@ const AboutMe = ({ className }) => {
   return (
     <section className={className}>
       <div className="has-background-grey-darker is-vcentered columns">
-        <div className="column is-one-third">
+        <div className="column is-one-third is-hidden-touch">
           <figure className="image is-pulled-right is-128x128">
             <img className="is-rounded" src={photo} alt="photo de baptiste lagisquet" />
           </figure>
         </div>
         <div className="column about">
-          <h3 className="title is-size-3 has-text-white">A propos de moi</h3>
-          <p className="has-text-white">Actuellement en recherche active d'un premier emploi, j'ai lancé ma micro-entreprise en mai 2020 afin d'avoir une première expérience. 
-            Je suis passionné de développement et plus précisément en Front-end. 
-            Je me forme continuellement en JavaScript, React, Gatbsy et ai travaillé en Angular8 lors de mon stage de fin d'études dans la <a href="https://syndis.fr">société Syndis.</a></p>
+          <h3 className="title is-size-3 has-text-white has-text-centered-mobile">A propos de moi</h3>
+          <p className="has-text-white">Actuellement en recherche active d'un premier emploi, j'ai lancé ma micro-entreprise en mai 2020 afin de me constituer une première expérience.
+          Je suis passionné de développement et plus précisément en Front-end.
+            Je me forme continuellement en JavaScript, React, Gatbsy et j'ai pu travailler en Angular8 lors de mon stage de fin d'études dans la <a href="https://syndis.fr">société Syndis.</a></p>
         </div>
       </div>
     </section>
@@ -28,12 +28,23 @@ const AboutMe = ({ className }) => {
 }
 
 export default styled(AboutMe)`
+  section {
+    margin: 5rem 0;
+  }
   a {
     color: ${colors.primary};
   }
+  @media (min-width:769px) {
   .about {
-    margin-right: 15rem;
+    margin-right: 20vh;
   }
+}
+  @media (max-width:768px) {
+  .about{
+    text-align: justify;
+    margin: 0 1rem;
+  }
+}
   .image {
     margin-right: 3rem;
   }
