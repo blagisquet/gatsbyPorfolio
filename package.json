@@ -4,6 +4,7 @@
   "version": "1.10.2",
   "author": "Aman Mittal <amandeepmittal@live.com>",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "bulma": "^0.8.2",
     "gatsby": "^2.20.18",
     "gatsby-image": "^2.3.2",
@@ -17,10 +18,12 @@
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-transformer-sharp": "^2.4.4",
     "node-sass": "^4.13.1",
+    "polished": "^3.6.3",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-helmet": "^5.2.1",
-    "react-icons": "^3.9.0"
+    "react-icons": "^3.9.0",
+    "styled-components": "^5.1.1"
   },
   "keywords": [
     "gatsby",

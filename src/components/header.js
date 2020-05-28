@@ -1,12 +1,15 @@
 import React from 'react';
-import { FaGithub } from 'react-icons/fa';
 
 import './style.scss';
+
+import Home from './home';
 import Navbar from './navbar';
 
 const Header = ({ siteTitle }) => (
-	<section className="hero gradientBg is-fullheight-with-navbar">
-	
+	<section className="hero is-fullheight-with-navbar">
+		<Navbar />
+		<Home />
+		<span id="aboutme"></span>
 	</section>
 );
 
