@@ -1,12 +1,10 @@
+# My Cv and Portfolio 2020
+
+I'm using Gatsby Bulma Quickstart, thanks to Amande Epmittal ! 
+
 # Gatsby Bulma Quickstart
 
 > A Quick Way to bootstrap your next Gatsby + Bulma site.
-
-![ss](https://i.imgur.com/Vz81GEl.png)
-
-## Demo 💯
-
-- [Demo Link](https://tender-raman-99e09b.netlify.com/)
 
 ## Features 🚀
 
@@ -66,7 +64,5 @@ resolve: `gatsby-plugin-google-analytics`,
 ## Contact me
 
 If you find any possible improvement or suggestion related to code or UI/UX please contribute by submitting a PR.
-
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A611K61)
 
 **Happy Coding!** 🎉🎉
