@@ -1,11 +1,12 @@
-import React from 'react'
-import Layout from '../components/layout'
+import React from 'react';
+import Layout from '../components/layout';
 
 const NotFoundPage = () => (
   <Layout>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <h1>Oups</h1>
+    <p>Il semblerait que cette page n'existe pas encore...</p>
+    <a href="#accueil">Retourner sur le site</a>
   </Layout>
 )
 
-export default NotFoundPage
+export default NotFoundPage;
