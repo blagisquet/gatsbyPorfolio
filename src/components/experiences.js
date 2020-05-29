@@ -11,7 +11,7 @@ const Experiences = ({ className }) => {
   return (
     <section className={className}>
       <div className="container columns">
-        <div className="column is-one-third">
+        <div className="column exp is-one-third">
           <h4 className="title is-pulled-right">Expériences</h4>
         </div>
         <div className="column experiences">
@@ -36,7 +36,17 @@ export default styled(Experiences)`
   span {
     font-style: italic;
   }
-  experiences {
-    margin: 1rem 1rem;
+  .exp {
+    margin-right: 2.8rem;
   }
+  @media (min-width:769px) {
+  .experiences {
+    margin-right: 20vh;
+  }
+}
+  @media (max-width:768px) {
+  .experiences{
+    margin: 0 1rem;
+  }
+}
 `;

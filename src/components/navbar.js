@@ -12,8 +12,8 @@ const Navbar = ({ className }) => {
 	return (
 		<section className={className}>
 			<div className="hero-head">
-				<nav className="navbar is-fixed-top has-text-centered" role="navigation" aria-label="main-navigation">
-				<div className="navbar-brand">
+				<nav className="navbar is-transparent has-background-black is-fixed-top has-text-centered" role="navigation" aria-label="main-navigation">
+					<div className="navbar-brand">
 						<a href="#accueil" className="navbar-item">
 							<img src={Logo} className="image" alt="logo du studio" />
 						</a>
@@ -28,23 +28,28 @@ const Navbar = ({ className }) => {
 						<div id="mainListDiv" className={`main_list ${menuActive ? '' : 'show_list'}`}>
 
 							<a href="#accueil" className="navbar-item is-size-5" onClick={() => setMenuActive(!menuActive)}>Accueil</a>
-							<a href="#studio" className="navbar-item is-size-5" onClick={() => setMenuActive(!menuActive)}>A propos</a>
-							<a href="#services" className="navbar-item is-size-5" onClick={() => setMenuActive(!menuActive)}>Expériences</a>
-							<a href="#medias" className="navbar-item is-size-5" onClick={() => setMenuActive(!menuActive)}>Formations</a>
-							<a href="#avis" className="navbar-item is-size-5" onClick={() => setMenuActive(!menuActive)}>Certifications</a>
-							<a href="#map" className="navbar-item is-size-5" onClick={() => setMenuActive(!menuActive)}>Compétences</a>
-							<a href="#contact" className="navbar-item is-size-5" onClick={() => setMenuActive(!menuActive)}>Freelance</a>
+							<a href="#about" className="navbar-item is-size-5" onClick={() => setMenuActive(!menuActive)}>A propos</a>
+							<a href="#experiences" className="navbar-item is-size-5" onClick={() => setMenuActive(!menuActive)}>Expériences</a>
+							<a href="#formations" className="navbar-item is-size-5" onClick={() => setMenuActive(!menuActive)}>Formations</a>
+							<a href="#certif" className="navbar-item is-size-5" onClick={() => setMenuActive(!menuActive)}>Certifications</a>
+							<a href="#competences" className="navbar-item is-size-5" onClick={() => setMenuActive(!menuActive)}>Compétences</a>
+							<a href="#freelance" className="navbar-item is-size-5" onClick={() => setMenuActive(!menuActive)}>Freelance</a>
 							<a href="#contact" className="navbar-item is-size-5" onClick={() => setMenuActive(!menuActive)}>Contact</a>
 						</div>
 					</div>
-					<div className="navbar-end is-hidden-touch">
+					<div className="navbar-end has-background-black is-hidden-touch">
 						<a href="#accueil" className="navbar-item is-size-5">Accueil</a>
-						<a href="#studio" className="navbar-item is-size-5">A propos</a>
-						<a href="#services" className="navbar-item is-size-5">Expériences</a>
-						<a href="#medias" className="navbar-item is-size-5">Formations</a>
-						<a href="#avis" className="navbar-item is-size-5">Certifications</a>
-						<a href="#map" className="navbar-item is-size-5">Compétences</a>
-						<a href="#contact" className="navbar-item menu is-size-5">Freelance</a>
+						<a href="#about" className="navbar-item is-size-5">A propos</a>
+						<div className="navbar-item has-dropdown is-hoverable">
+							<a className="navbar-link is-size-5" href="#experiences">CV</a>
+							<div className="navbar-dropdown has-background-black">
+								<a href="#experiences" className="navbar-item is-size-5">Expériences</a>
+								<a href="#formations" className="navbar-item is-size-5">Formations</a>
+								<a href="#certif" className="navbar-item is-size-5">Certifications</a>
+								<a href="#competences" className="navbar-item is-size-5">Compétences</a>
+							</div>
+						</div>
+						<a href="#freelance" className="navbar-item is-size-5">Freelance</a>
 						<a href="#contact" className="navbar-item menu is-size-5">Contact</a>
 					</div>
 				</nav>

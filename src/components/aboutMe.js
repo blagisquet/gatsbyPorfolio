@@ -17,11 +17,13 @@ const AboutMe = ({ className }) => {
           </figure>
         </div>
         <div className="column about">
-          <h3 className="title is-size-3 has-text-white has-text-centered-mobile">A propos de moi</h3>
+          <h3 className="title is-size-4 has-text-white has-text-centered-mobile">A propos de moi</h3>
           <p className="has-text-white">Actuellement en recherche active d'un premier emploi, j'ai lancé ma micro-entreprise en mai 2020 afin de me constituer une première expérience.
-          Je suis passionné de développement et plus précisément en Front-end.
-            Je me forme continuellement en JavaScript, React, Gatbsy et j'ai pu travailler en Angular8 lors de mon stage de fin d'études dans la <a href="https://syndis.fr">société Syndis.</a></p>
-        </div>
+          Je suis passionné de développement et plus précisément de Front-end.
+            Je me forme continuellement en JavaScript, React, Gatbsy et j'ai pu travailler en Angular8 lors de mon stage de fin d'études dans la <a href="https://syndis.fr" target="_blank" re="noreferrer noopener">société Syndis.</a></p>
+          <h3 className="title is-size-4 has-text-white has-text-centered-mobile">Contact</h3>
+          <p>Baptiste Lagisquet</p>
+          </div>
       </div>
     </section>
   );
@@ -30,6 +32,9 @@ const AboutMe = ({ className }) => {
 export default styled(AboutMe)`
   section {
     margin: 5rem 0;
+  }
+  h3 {
+    margin-top: 5rem;
   }
   a {
     color: ${colors.primary};

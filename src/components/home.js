@@ -12,10 +12,17 @@ const home = ({ className }) => {
   return (
     <Hero>
       <section className={className} id="accueil">
-        <h1 className="is-invisible">Portfolio Baptiste Lagisquet</h1>
-        <h2 className="has-text-centered has-text-weight-bold title is-size-1">Baptiste Lagisquet</h2>
-        <h3 className="has-text-centered subtitle is-size-2">Développeur web et mobile</h3>
-        <a href="#aboutme"><span className="icon">
+        <div className="home">
+          <h1 className="is-invisible">Portfolio Baptiste Lagisquet</h1>
+          <h2 className="has-text-centered has-text-weight-bold title is-size-1">Baptiste Lagisquet</h2>
+          <h3 className="has-text-centered subtitle is-size-2">Développeur web et mobile</h3>
+          <div className="has-text-centered reseaux">
+            <a href="https://www.linkedin.com/in/baptiste-lagisquet-bb2a8937/" target="_blank" rel="noreferrer noopener"><span className="icon"><i className="fab fa-3x fa-linkedin"></i></span></a>
+            <a href="https://github.com/blagisquet" target="_blank" rel="noreferrer noopener"><span className="icon"><i className="fab fa-3x fa-github-square"></i></span></a>
+            <a href="https://twitter.com/LagisquetB" target="_blank" rel="noreferrer noopener"><span className="icon"><i className="fab fa-3x fa-twitter-square"></i></span></a>
+          </div>
+        </div>
+        <a href="#aboutme"><span className="arrow icon">
           <i className="fas fa-2x fa-arrow-circle-down is-hidden-tablet"></i>
           <i className="fas fa-3x fa-arrow-circle-down is-hidden-mobile"></i>
         </span></a>
@@ -31,7 +38,23 @@ export default styled(home)`
   h3 {
     color: ${colors.primary};
   }
-  span {
+  @media (min-width:375px) and (max-width:768px) {
+    .home {
+      margin-top: 20vh;
+    }
+  }
+  @media (min-width:769px) {
+    .home {
+      margin-top: 30vh;
+    }
+  }
+  .reseaux {
+    margin-top: 3rem;
+    a {
+      margin: 2.5rem;
+    }
+  }
+  .arrow {
     position: absolute;
     top: 92vh;
     left: 49%;
@@ -46,7 +69,7 @@ export default styled(home)`
       left: 46%;
     }
   }
-  .fas {
+  .fas, .fab {
     color: white;
     &:hover {
       color: ${colors.primary};
