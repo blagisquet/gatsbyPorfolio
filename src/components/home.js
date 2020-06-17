@@ -11,7 +11,7 @@ import './style.scss';
 const home = ({ className }) => {
   return (
     <Hero>
-      <section className={className} id="accueil">
+      <section className={className}>
         <div className="home">
           <h1 className="is-invisible">Portfolio Baptiste Lagisquet</h1>
           <h2 className="has-text-centered has-text-weight-bold title is-size-1">Baptiste Lagisquet</h2>

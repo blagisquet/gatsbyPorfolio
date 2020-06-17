@@ -10,7 +10,7 @@ import styled from 'styled-components';
 const Navbar = ({ className }) => {
 	const [menuActive, setMenuActive] = useState(false);
 	return (
-		<section className={className}>
+		<section className={className} id="accueil">
 			<div className="hero-head">
 				<nav className="navbar is-transparent has-background-black is-fixed-top has-text-centered" role="navigation" aria-label="main-navigation">
 					<div className="navbar-brand">
@@ -75,12 +75,30 @@ export default styled(Navbar)`
 	}
 
 	.navbar-item {
-		color: ${colors.white};
+		color: ${colors.white} !important;
 		&:hover  {
-			color: ${colors.primary};
-			background-color: transparent;
+			color: ${colors.primary} !important;
+			background-color: transparent !important;
 		}
 	}
+
+  .navbar-link {
+    color: ${colors.white} !important;
+    &:hover {
+      color: ${colors.primary} !important;
+    }
+  }
+
+  .navbar-dropdown-background-color {
+    color: ${colors.black} !important;
+  }
+
+  .navbar-dropdown-arrow {
+    color: ${colors.white} !important;
+    &:hover{
+      color: ${colors.primary} !important;
+    }
+  }
 
 	@media screen and (min-width:1024px) {
 		.navbar-end {
