@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import {slide as Menu} from 'react-burger-menu';
 import Logo from '../images/logo.png';
 
 import './style.scss';
@@ -8,9 +8,16 @@ import { colors } from '../theme/helpers';
 import styled from 'styled-components';
 
 const Navbar = ({ className }) => {
-	const [menuActive, setMenuActive] = useState(false);
+
+  const [menuActive, setMenuActive] = useState(false);
 	return (
 		<section className={className} id="accueil">
+      <Menu>
+        <a id="home" className="menu-item" href="/">Home</a>
+        <a id="about" className="menu-item" href="/about">About</a>
+        <a id="contact" className="menu-item" href="/contact">Contact</a>
+       
+      </Menu>
 			<div className="hero-head">
 				<nav className="navbar is-transparent has-background-black is-fixed-top has-text-centered" role="navigation" aria-label="main-navigation">
 					<div className="navbar-brand">
@@ -90,7 +97,6 @@ export default styled(Navbar)`
   }
 
   .navbar-dropdown-background-color {
-    color: ${colors.black} !important;
   }
 
   .navbar-dropdown-arrow {
