@@ -12,15 +12,15 @@ const Experiences = ({ className }) => {
     <section className={className}>
       <div className="container columns">
         <div className="column exp is-one-third">
-          <h4 className="title is-pulled-right">Expériences</h4>
+          <h3 className="has-text-weight-bold is-pulled-right">Expériences</h3>
         </div>
         <div className="column experiences">
           <div>
-            <h5 className="subtitle has-text-weight-bold">Freelance</h5>
+            <h4 className="has-text-weight-bold">Freelance</h4>
             <p><span>Développeur Web</span> • Mars 2020 - Aujourd'hui</p>
           </div>
           <div>
-            <h5 className="subtitle has-text-weight-bold">Syndis</h5>
+            <h4 className="has-text-weight-bold">Syndis</h4>
             <p><span>Stagiaire développeur Angular8</span> • Août 2019 - Novembre 2019</p>
           </div>
         </div>
@@ -30,14 +30,18 @@ const Experiences = ({ className }) => {
 }
 
 export default styled(Experiences)`
-  h4 {
+  h3 {
     text-decoration: underline ${colors.primary};
+    font-size: 32px;
+  }
+  h4 {
+    font-size: 1.5rem;
   }
   span {
     font-style: italic;
   }
   .exp {
-    margin-right: 2.8rem;
+    margin-right: 2.6rem;
   }
   @media (min-width:769px) {
   .experiences {
