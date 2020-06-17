@@ -23,7 +23,8 @@ const AboutMe = ({ className }) => {
             Je me forme continuellement en JavaScript, React, Gatbsy et j'ai pu travailler en Angular8 lors de mon stage de fin d'études dans la <a href="https://syndis.fr" target="_blank" re="noreferrer noopener">société Syndis.</a></p>
           <h3 className="title is-size-4 has-text-white has-text-centered-mobile">Contact</h3>
           <p className="has-text-white">Baptiste Lagisquet</p>
-          <p>0658400008</p>
+          <p className="has-text-white">Téléphone:<a href="tel:+33658400008"> 06 58 40 00 08</a></p>
+          <p className="has-text-white">Mail:<a href="mailto:b.lagisquet@gmail.com"> b.lagisquet@gmail.com</a></p>
           </div>
       </div>
     </section>
